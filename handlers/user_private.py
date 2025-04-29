@@ -24,6 +24,6 @@ async def support(message: types.Message):
 async def basket(message: types.Message):
     await message.answer("Здесь хранятся ваши выбранные товары")
 
-@user_router.message(F.text.lower().contains("стои")|F.text.lower().contains("цен"))
-async def echo(message: types.Message):
-    await message.answer("в работе")
+# @user_router.message(F.text.lower().contains("стои")|F.text.lower().contains("цен"))
+# async def echo(message: types.Message):
+#     await message.answer("в работе")
