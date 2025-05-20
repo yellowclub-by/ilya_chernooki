@@ -35,7 +35,7 @@ async def answer(callback:types.CallbackQuery):
 
 @user_router.message(Command("basket"))
 async def basket(message: types.Message):
-    await message.answer("Здесь хранятся ваши выбранные товары")
+    await message.answer("""<b>Здесь хранятся</b> ваши выбранные товары""",reply_markup=inline.links_kb)
 
 @user_router.message(F.text.lower() == "назад")
 async def back_menu(message: types.Message):

@@ -1,5 +1,5 @@
 from aiogram.utils.keyboard import InlineKeyboardBuilder
-from aiogram.types import InlineKeyboardButton
+from aiogram.types import InlineKeyboardButton,InlineKeyboardMarkup
 
 
 def question():
@@ -11,3 +11,15 @@ def question():
     width=1
     )
     return builder.as_markup()
+
+
+links_kb = InlineKeyboardMarkup(
+inline_keyboard=[
+    [InlineKeyboardButton(text="сайт",url="https://vm.tiktok.com/ZMSNmLe6m/"),
+     InlineKeyboardButton(text="сайт",url="https://vm.tiktok.com/ZMSNmLUr5/"),
+     InlineKeyboardButton(text="телеграм",url="https://t.me/XZ_chto_pisat_1")
+    ]
+]
+
+
+)

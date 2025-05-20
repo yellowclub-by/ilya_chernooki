@@ -1,9 +1,11 @@
 import asyncio
 from aiogram import Bot, Dispatcher
+from aiogram.enums import ParseMode
+
 
 
 TOKEN = "7858050871:AAHQDdZTj8N0BvOfpds0ee3k_S1yMmxxknA"
-bot = Bot(token=TOKEN)
+bot = Bot(token=TOKEN,parse_mode=ParseMode.HTML)
 dp = Dispatcher()
 
 
